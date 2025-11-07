@@ -37,5 +37,37 @@ const InboxPage = () => {
     </div>
   );
 };
+import { useEffect } from 'react'
 
+export default function Friends() {
+  useEffect(() => {
+    console.log('🎯 صفحة الأصدقاء تعمل!')
+    alert('صفحة الأصدقاء تحمّلت successfully!')
+  }, [])
+
+  return (
+    <div style={{ 
+      padding: 20, 
+      textAlign: 'center',
+      backgroundColor: '#f3f4f6',
+      minHeight: '100vh'
+    }}>
+      <h1 style={{ color: '#dc2626', fontSize: 24 }}>👥 الأصدقاء</h1>
+      <p style={{ color: '#374151' }}>هذه صفحة الأصدقاء - تعمل بنجاح! 🎉</p>
+      <button 
+        style={{
+          backgroundColor: '#dc2626',
+          color: 'white',
+          padding: '10px 20px',
+          border: 'none',
+          borderRadius: 8,
+          marginTop: 20
+        }}
+        onClick={() => alert('زر يعمل!')}
+      >
+        اختبر الزر
+      </button>
+    </div>
+  )
+    }
 export default InboxPage;
